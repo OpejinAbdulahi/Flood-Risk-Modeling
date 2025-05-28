@@ -1,12 +1,12 @@
 # Flood-Risk-Modeling
 
-# 🌊 Flood Risk Mapping Using AHP and ArcPy
+# Flood Risk Mapping Using AHP and ArcPy
 
 This guide explains how to perform flood risk mapping using the Analytical Hierarchy Process (AHP) and ArcPy in ArcGIS. It is written in a simple, step-by-step format to help other researcher to replicate the process.
 
 ---
 
-## 🧰 Step 1: Prepare Your Input Files
+## Step 1: Prepare Your Input Files
 
 You need the following raster and vector datasets:
 
@@ -20,7 +20,7 @@ All should be projected and aligned properly.
 
 ---
 
-## 🧗 Step 2: Extract Maps from DEM
+## Step 2: Extract Maps from DEM
 
 From the DEM, generate:
 
@@ -30,7 +30,7 @@ From the DEM, generate:
 
 ---
 
-## 📊 Step 3: Reclassify Each Map
+## Step 3: Reclassify Each Map
 
 Convert values in each map to a 1–5 scale:
 
@@ -49,7 +49,7 @@ Reclassify for:
 
 ---
 
-## ⚖️ Step 4: Assign Weights (AHP)
+## Step 4: Assign Weights (AHP)
 
 Assign importance to each factor. Example:
 
@@ -64,7 +64,7 @@ Assign importance to each factor. Example:
 
 ---
 
-## 🧮 Step 5: Create a Suitability Map
+## Step 5: Create a Suitability Map
 
 Multiply each layer by its weight and sum them:
 
@@ -81,7 +81,7 @@ suitability = (
 
 ---
 
-## 🚦 Step 6: Classify Final Risk Zones
+## Step 6: Classify Final Risk Zones
 
 Reclassify the suitability score into zones:
 
@@ -95,14 +95,14 @@ Reclassify the suitability score into zones:
 
 ---
 
-## ✅ Output
+## Output
 
 - `Flood_Suitability.tif` – Continuous flood risk score.
 - `Flood_Risk_Zones.tif` – Classified flood risk zones.
 
 ---
 
-## 📦 Suggested Folder Structure
+## Suggested Folder Structure
 
 ```
 C:\FloodModel\Workspace\
@@ -121,7 +121,7 @@ arcpy.env.workspace = r"C:\FloodModel\Workspace"
 
 ---
 
-## 🧠 Summary
+## Summary
 
 Flood risk mapping with AHP is about:
 1. Preparing and deriving input data
