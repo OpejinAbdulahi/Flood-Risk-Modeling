@@ -1,11 +1,6 @@
 #-------------------------------------------------------------------------------
 # Name:        Flood risk Modeling
 # Purpose:
-#
-# Author:      OPEJINA22
-#
-# Created:     28/05/2025
-# Copyright:   (c) OPEJINA22 2025
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 import arcpy
